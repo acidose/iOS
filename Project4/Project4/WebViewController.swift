@@ -9,10 +9,11 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, WKNavigationDelegate {
+class WebViewController: UIViewController, WKNavigationDelegate {
     var webView: WKWebView!
     var progressView: UIProgressView!
-    var websites = ["apple.com", "google.com"]
+    var websites = [String]()
+    var website: String!
     
     override func loadView(){
         webView = WKWebView()
@@ -40,7 +41,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         
         webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
         
-        let url = URL(string: "https://" + websites[0])!
+        let url = URL(string: "https://" + website)!
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
     }
@@ -72,10 +73,11 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         let url = navigationAction.request.url
+        print(url!)
         
         if let host = url?.host {
             for website in websites{
-                if host.contains(website) {
+                if host.contains(website) || host.contains("about:blank") {
                    decisionHandler(.allow)
                    return
                }
@@ -83,7 +85,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         }
         
         decisionHandler(.cancel)
-        let ac = UIAlertController(title: "Forbidden", message: "Can't access an outside", preferredStyle: .alert)
+        let ac = UIAlertController(title: "Forbidden", message: "Outside Domain: \(url!)", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .destructive))
         present(ac, animated: true)
     }

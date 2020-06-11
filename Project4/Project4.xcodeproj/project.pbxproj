@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		D7DAC32C2490778E00C6CFCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAC32B2490778E00C6CFCB /* AppDelegate.swift */; };
 		D7DAC32E2490778E00C6CFCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAC32D2490778E00C6CFCB /* SceneDelegate.swift */; };
-		D7DAC3302490778E00C6CFCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAC32F2490778E00C6CFCB /* ViewController.swift */; };
+		D7DAC3302490778E00C6CFCB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAC32F2490778E00C6CFCB /* WebViewController.swift */; };
 		D7DAC3332490778E00C6CFCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DAC3312490778E00C6CFCB /* Main.storyboard */; };
 		D7DAC3352490779000C6CFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DAC3342490779000C6CFCB /* Assets.xcassets */; };
 		D7DAC3382490779000C6CFCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DAC3362490779000C6CFCB /* LaunchScreen.storyboard */; };
+		D7DAC3462491BCBD00C6CFCB /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DAC3452491BCBD00C6CFCB /* InitialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D7DAC3282490778E00C6CFCB /* Project4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DAC32B2490778E00C6CFCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7DAC32D2490778E00C6CFCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D7DAC32F2490778E00C6CFCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7DAC32F2490778E00C6CFCB /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		D7DAC3322490778E00C6CFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7DAC3342490779000C6CFCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7DAC3372490779000C6CFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7DAC3392490779000C6CFCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DAC3452491BCBD00C6CFCB /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				D7DAC32B2490778E00C6CFCB /* AppDelegate.swift */,
 				D7DAC32D2490778E00C6CFCB /* SceneDelegate.swift */,
-				D7DAC32F2490778E00C6CFCB /* ViewController.swift */,
+				D7DAC32F2490778E00C6CFCB /* WebViewController.swift */,
+				D7DAC3452491BCBD00C6CFCB /* InitialViewController.swift */,
 				D7DAC3312490778E00C6CFCB /* Main.storyboard */,
 				D7DAC3342490779000C6CFCB /* Assets.xcassets */,
 				D7DAC3362490779000C6CFCB /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7DAC3302490778E00C6CFCB /* ViewController.swift in Sources */,
+				D7DAC3302490778E00C6CFCB /* WebViewController.swift in Sources */,
 				D7DAC32C2490778E00C6CFCB /* AppDelegate.swift in Sources */,
 				D7DAC32E2490778E00C6CFCB /* SceneDelegate.swift in Sources */,
+				D7DAC3462491BCBD00C6CFCB /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
